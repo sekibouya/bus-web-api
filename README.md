@@ -51,11 +51,11 @@ docker compose logs -f web
 ```
 .
 ├──src/main/kotlin/com.example.bus_web_api ----> application core codes
-│   ├── BusData.kt   
-│   ├── BusController.kt  
-│   ├── BusService.kt
-│   ├── BusRepository.kt
-│   └── BusWebApiApplication.kt
+│                               ├── BusData.kt   
+│                               ├── BusController.kt  
+│                               ├── BusService.kt
+│                               ├── BusRepository.kt
+│                               └── BusWebApiApplication.kt
 │
 └── sql  ----> DB definition master
 ```
