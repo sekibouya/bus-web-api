@@ -13,8 +13,6 @@
     * [Library](#library)
 
 ## Development Environment
-開発環境をdocker-composeで構築しています。
-
 ### Requirements
 * Kotlin
 * docker / docker-compose
@@ -22,12 +20,14 @@
 ### Start
 ```
 docker compose up -d
+./gradlew bootRun 
 ```
 
 ### Shutdown
 ```
 docker compose down
 ```
+control+C
 
 ### Log
 ```
