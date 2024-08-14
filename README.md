@@ -1,8 +1,8 @@
 # bus-web-api
 
 ## Table of Contents
-* [Development Environment](#development-environment)
-    * [Requirements](#requirements)
+* [Requirements](#requirements)
+* [Usage](#Usage)
     * [Start](#start)
     * [Shutdown](#shutdown)
     * [Log](#log)
@@ -12,16 +12,24 @@
     * [Module Dependency](#module-dependency)
     * [Library](#library)
 
-## Development Environment
-### Requirements
+## Requirements
 * Kotlin
 * docker / docker-compose
 
+## Usage
 ### Start
 ```
 docker compose up -d
 ./gradlew bootRun 
 ```
+### 全てのバス停を取得
+`http://localhost:8080/stops`
+
+### 指定した行き先までに経由するバス停を取得
+`http://localhost:8080/stops/{trip_headsign}`
+
+### 指定したバス停の時刻表を取得
+`http://localhost:8080/timeTable/{stopName}`
 
 ### Shutdown
 ```
