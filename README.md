@@ -27,7 +27,7 @@ docker compose up -d
 ```
 docker compose down
 ```
-control+C
+`Ctrl + C`
 
 ### Log
 ```
