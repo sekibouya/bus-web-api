@@ -25,11 +25,12 @@ docker compose up -d
 ### 全てのバス停を取得
 `http://localhost:8080/stops`
 
-### 指定した行き先までに経由するバス停を取得(調整中)
+### 指定した行き先までに経由するバス停を取得(α版)
 `http://localhost:8080/stops/{trip_headsign}`
 
 ### 指定したバス停の時刻表を取得
 `http://localhost:8080/timeTable/{stopName}`
+<br>↓stopName:小山田桜台を入力した時
 ![時刻表](doc/get_timetable.png)
 
 ### Shutdown
